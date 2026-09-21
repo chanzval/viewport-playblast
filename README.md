@@ -64,39 +64,6 @@ While maintaining the core logic and functionality, I've made significant improv
 sudo yum install ffmpeg
 ```
 ---
-
-## Architecture
-
-### Directory Structure
-
-```
-viewport-playblast/
-├── viewport_playblast/                 
-│   ├── __init__.py                     # Package entry point
-│   ├── core/                           # Core business logic
-│   │   ├── __init__.py
-│   │   ├── constants.py                # All configuration constants
-│   │   ├── playblast.py                # Main ViewportPlayblast class
-│   │   ├── encoder.py                  # FFmpeg encoding logic
-│   │   └── visibility.py               # Viewport visibility management
-│   ├── ui/                             # UI components
-│   │   ├── __init__.py
-│   │   ├── main_window.py              # Main UI window
-│   │   └── dialogs/                    # Dialog windows
-│   │       ├── __init__.py
-│   │       ├── settings.py             # FFmpeg settings
-│   │       ├── encoder.py              # Encoder settings
-│   │       └── visibility.py           # Visibility customization
-│   └── utils/                          # Utility customization
-│       ├── __init__.py
-│       ├── maya_utils.py               # Maya helper functions
-│       └── path_utils.py               # Path utilities
-├── tests/                              # Unit tests
-├── README.md   
-└── setup.py
-└── LICENSE
-```
----
 ## Quick Start
 
 ### Installation
